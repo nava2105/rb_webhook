@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: Webhook API
+  description: Simple Ruby API that returns a message in JSON.
+  version: 1.0.0
+servers:
+  - url: http://localhost:4567
+    description: Running server
+paths:
+  /webhook:
+    get:
+      summary: Returns a welcome message
+      description: Return a JSON object with a welcome message from webhook.
+      responses:
+        '200':
+          description: Successful response with JSON message.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Hello World from Webhook in Ruby"

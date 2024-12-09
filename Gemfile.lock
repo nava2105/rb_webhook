@@ -1,14 +1,61 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    actionpack (8.0.0)
+      actionview (= 8.0.0)
+      activesupport (= 8.0.0)
+      nokogiri (>= 1.8.5)
+      rack (>= 2.2.4)
+      rack-session (>= 1.0.1)
+      rack-test (>= 0.6.3)
+      rails-dom-testing (~> 2.2)
+      rails-html-sanitizer (~> 1.6)
+      useragent (~> 0.16)
+    actionview (8.0.0)
+      activesupport (= 8.0.0)
+      builder (~> 3.1)
+      erubi (~> 1.11)
+      rails-dom-testing (~> 2.2)
+      rails-html-sanitizer (~> 1.6)
+    activesupport (8.0.0)
+      base64
+      benchmark (>= 0.3)
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.3.1)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      logger (>= 1.4.2)
+      minitest (>= 5.1)
+      securerandom (>= 0.3)
+      tzinfo (~> 2.0, >= 2.0.5)
+      uri (>= 0.13.1)
     base64 (0.2.0)
+    benchmark (0.3.0)
+    bigdecimal (3.1.8)
+    builder (3.3.0)
+    concurrent-ruby (1.3.4)
+    connection_pool (2.4.1)
+    crass (1.0.6)
+    drb (2.2.0)
+      ruby2_keywords
+    erubi (1.13.0)
+    i18n (1.14.6)
+      concurrent-ruby (~> 1.0)
     json (2.7.2)
     logger (1.6.0)
+    loofah (2.23.1)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.12.0)
+    minitest (5.20.0)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
+    nokogiri (1.17.0-x64-mingw-ucrt)
+      racc (~> 1.4)
     puma (6.5.0)
       nio4r (~> 2.0)
+    racc (1.7.3)
     rack (3.1.8)
     rack-protection (4.1.1)
       base64 (>= 0.1.0)
@@ -16,9 +63,19 @@ GEM
       rack (>= 3.0.0, < 4)
     rack-session (2.0.0)
       rack (>= 3.0.0)
+    rack-test (2.1.0)
+      rack (>= 1.3)
     rackup (2.2.1)
       rack (>= 3)
+    rails-dom-testing (2.2.0)
+      activesupport (>= 5.0.0)
+      minitest
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.6.1)
+      loofah (~> 2.21)
+      nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
     ruby2_keywords (0.0.5)
+    securerandom (0.3.1)
     sinatra (4.1.1)
       logger (>= 1.6.0)
       mustermann (~> 3.0)
@@ -26,7 +83,13 @@ GEM
       rack-protection (= 4.1.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
+    swagger-ui (0.0.2)
+      actionpack
     tilt (2.4.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    uri (0.13.1)
+    useragent (0.16.11)
 
 PLATFORMS
   x64-mingw-ucrt
@@ -36,6 +99,7 @@ DEPENDENCIES
   puma
   rackup
   sinatra
+  swagger-ui
 
 BUNDLED WITH
    2.5.22

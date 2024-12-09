@@ -21,6 +21,7 @@ This project is a basic **web server** built with Sinatra in Ruby. It provides a
 A list of technologies used within the project:
 * [Ruby](https://www.ruby-lang.org): Version 3.x
 * [Sinatra](https://sinatrarb.com): Version 2.x
+* [Swagger](https://swagger.io/docs): Version 0.0.2
 
 ## Installation
 ***  
@@ -60,3 +61,7 @@ docker run -p 4567:4567 na4va4/rb_webhook
 ```
 Open a browser and enter to
 [http://localhost:4567/webhook](http://localhost:4567/webhook)
+
+
+Or to review the endpoints in Swagger enter to
+[http://localhost:4567/docs](http://localhost:4567/docs)
