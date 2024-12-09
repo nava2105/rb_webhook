@@ -50,6 +50,10 @@ ruby app.rb
 ```
 Open a browser and enter to
 [http://localhost:4567/webhook](http://localhost:4567/webhook)
+
+
+Or to review the endpoints in Swagger enter to
+[http://localhost:4567/docs](http://localhost:4567/docs)
 ### Via Docker-hub
 Pull the image from Docker-hub
 ```
