@@ -26,7 +26,7 @@ A list of technologies used within the project:
 ***  
 Follow these steps to install and run the project:
 ### Via GitHub
-Follow these steps to install and run the project:
+Ensure you have ruby and bundler installed on your machine:
 ```
 ruby --version  
 gem install bundler
